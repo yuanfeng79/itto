@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#EEEEEE">
+
+        <Button
+            android:id="@+id/prev_knowledge_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="上一领域"
+            android:textSize="16sp"
+            android:onClick="prevKnowledgeArea"/>
+
+        <Button
+            android:id="@+id/prev_process"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="上一过程"
+            android:textSize="16sp"
+            android:onClick="prevProcess"/>
+
+        <Button
+            android:id="@+id/next_process"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="下一过程"
+            android:textSize="16sp"
+            android:onClick="nextProcess"/>
+
+        <Button
+            android:id="@+id/next_knowledge_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="下一领域"
+            android:textSize="16sp"
+            android:onClick="nextKnowledgeArea"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_above="@id/tool_bar"/>
+</RelativeLayout>
